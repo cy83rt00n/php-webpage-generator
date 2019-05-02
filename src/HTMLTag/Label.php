@@ -8,9 +8,7 @@
 
 namespace WebPageGenerator\HTMLTag;
 
-use WebPageGenerator\HTMLTag;
-
-class Label extends HTMLTag
+class Label extends Tag
 {
     public $for;
 }

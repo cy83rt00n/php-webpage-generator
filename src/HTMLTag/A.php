@@ -8,9 +8,7 @@
 
 namespace WebPageGenerator\HTMLTag;
 
-use WebPageGenerator\HTMLTag;
-
-class A extends HTMLTag
+class A extends Tag
 {
     public $href, $target;
 }

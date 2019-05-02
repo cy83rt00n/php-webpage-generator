@@ -6,7 +6,7 @@
  * Time: 2:41
  */
 
-namespace WebPageGenerator;
+namespace WebPageGenerator\WebPage;
 
 class WebPage
 {

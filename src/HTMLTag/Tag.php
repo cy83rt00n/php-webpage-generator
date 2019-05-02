@@ -6,7 +6,7 @@
  * Time: 2:35
  */
 
-namespace WebPageGenerator;
+namespace WebPageGenerator\HTMLTag;
 
 function HTMLTag($name, $content='', $id='', $class='', $data=array())
 {
@@ -47,6 +47,7 @@ class Tag
                 $tag .= "data-{$key}=\"{$value}\"";
             }
         }
+        $tag = trim($tag);
         $tag = "<{$tag}>$this->content</{$this->name}>";
         return $tag;
     }

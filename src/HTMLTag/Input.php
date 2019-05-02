@@ -8,9 +8,7 @@
 
 namespace WebPageGenerator\HTMLTag;
 
-use WebPageGenerator\HTMLTag;
-
-class Input extends HTMLTag
+class Input extends Tag
 {
     public $type, $name, $value;
 }
