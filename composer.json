@@ -13,7 +13,8 @@
     }
   ],
   "autoload": {
-    "psr-4": {"WebPageGenerator\\": "src/"}
+    "psr-4": {"WebPageGenerator\\": "src/"},
+    "files": ["src/Loader.php"]
   },
   "support": {
     "issues": "https://github.com/cy83rt00n/php-webpage-generator/issues"
