@@ -4,7 +4,6 @@
   "description": "PHP web page generator",
   "keywords": [],
   "homepage": "https://github.com/cy83rt00n/php-webpage-generator",
-  "license": "MIT",
   "authors": [
     {
       "name": "Artem Tsybin",
@@ -13,13 +12,10 @@
     }
   ],
   "autoload": {
-    "psr-4": {"WebPageGenerator\\": "src/"},
-    "files": ["src/Loader.php"]
-  },
-  "support": {
-    "issues": "https://github.com/cy83rt00n/php-webpage-generator/issues"
+    "psr-4": {"WebPageGenerator\\": "lib/"},
+    "files": ["lib/Loader.php"]
   },
   "require": {
-    "php": ">=5.3.0"
+    "php": ">=5.6.0"
   }
 }
