@@ -1,0 +1,24 @@
+{
+  "name": "cypro/php-webpage-generator",
+  "type": "package",
+  "description": "PHP web page generator",
+  "keywords": [],
+  "homepage": "https://github.com/cy83rt00n/php-webpage-generator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Artem Tsybin",
+      "email": "cy83rt00n@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"WebPageGenerator\\": "src/"}
+  },
+  "support": {
+    "issues": "https://github.com/cy83rt00n/php-webpage-generator/issues"
+  },
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
