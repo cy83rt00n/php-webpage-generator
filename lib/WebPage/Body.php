@@ -7,8 +7,14 @@
  */
 
 namespace WebPageGenerator\WebPage;
+use WebPageGenerator\HTMLTag\Tag;
 
-class Body
+class Body extends Tag
 {
+
+    public function __construct( string $content = '')
+    {
+        parent::__construct("body", $content, '','','');
+    }
 
 }

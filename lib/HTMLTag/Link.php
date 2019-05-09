@@ -2,24 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: cy83rt00n
- * Date: 02.05.19
- * Time: 2:46
+ * Date: 09.05.19
+ * Time: 17:53
  */
 
 namespace WebPageGenerator\HTMLTag;
 
-class Input extends Tag
+class Link extends Tag
 {
-    public $type, $key, $value;
+    protected $rel, $href;
 
-
-    public function __construct($type, $name, $value, string $id = '', string $class = '', array $data = array())
+    public function __construct($rel, $href)
     {
+        parent::__construct('link', '','','','');
         $attributes = array();
-        $attributes['type'] = $type;
-        $attributes['name'] = $name;
-        $attributes['value'] = $value;
-        parent::__construct('input', '', $id, $class, $data);
+        $attributes["rel"] = $rel;
+        $attributes["href"] = $href;
         $this->setAttributes($attributes);
     }
 
@@ -35,4 +33,5 @@ class Input extends Tag
         $tag = "<{$tag}/>";
         return $tag;
     }
+
 }

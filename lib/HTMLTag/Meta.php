@@ -2,24 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: cy83rt00n
- * Date: 02.05.19
- * Time: 2:46
+ * Date: 09.05.19
+ * Time: 17:59
  */
 
 namespace WebPageGenerator\HTMLTag;
 
-class Input extends Tag
+class Meta extends Tag
 {
-    public $type, $key, $value;
+    protected $key, $content;
 
-
-    public function __construct($type, $name, $value, string $id = '', string $class = '', array $data = array())
+    public function __construct($name, $content)
     {
+        parent::__construct('meta', '','','','');
         $attributes = array();
-        $attributes['type'] = $type;
-        $attributes['name'] = $name;
-        $attributes['value'] = $value;
-        parent::__construct('input', '', $id, $class, $data);
+        $attributes["name"] = $name;
+        $attributes["content"] = $content;
         $this->setAttributes($attributes);
     }
 
